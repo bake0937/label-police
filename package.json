@@ -14,7 +14,8 @@
   "scripts": {
     "build": "tsc",
     "start": "probot run ./lib/index.js",
-    "test": "jest"
+    "test": "jest",
+    "dev" : "tsc && yarn start"
   },
   "dependencies": {
     "probot": "^11.0.1"
