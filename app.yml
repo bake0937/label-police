@@ -24,17 +24,17 @@ default_events:
   # - gollum
   - issue_comment
   - issues
-# - label
-# - milestone
-# - member
-# - membership
-# - org_block
-# - organization
-# - page_build
-# - project
-# - project_card
-# - project_column
-# - public
+  # - label
+  # - milestone
+  # - member
+  # - membership
+  # - org_block
+  # - organization
+  # - page_build
+  # - project
+  # - project_card
+  # - project_column
+  # - public
   - pull_request
   - pull_request_review
   - pull_request_review_comment
