@@ -1264,11 +1264,11 @@ __metadata:
   linkType: hard
 
 "@types/pino-http@npm:^5.0.6":
-  version: 5.4.3
-  resolution: "@types/pino-http@npm:5.4.3"
+  version: 5.7.0
+  resolution: "@types/pino-http@npm:5.7.0"
   dependencies:
     "@types/pino": "*"
-  checksum: 966ac9172ea3eec84d435007eb4442753c6187c36818e6821d036dc566ac0d5620fb7327637891d583d020ccf6bd79f48f192d149ad59fbd27fd76d4dfdb54dc
+  checksum: 56467a371ff2501cab963f112daeadf4bb0768e4c69b361f46a147b24a96f17cad8e7320b84876b0dedc8522df64b6567b051d011da96f34f02a531eceb5dcb2
   languageName: node
   linkType: hard
 
