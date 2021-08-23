@@ -1,6 +1,6 @@
-# lebel-police
+# label-police
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that ラベルを良い感じ貼ってくれるGitHubApps
+> A GitHub App built with [Probot](https://github.com/probot/probot) that ラベルを良い感じに貼ってくれるGitHubApps
 
 ## Setup
 
@@ -16,15 +16,15 @@ npm start
 
 ```sh
 # 1. Build container
-docker build -t lebel-police .
+docker build -t label-police .
 
 # 2. Start container
-docker run -e APP_ID=<app-id> -e PRIVATE_KEY=<pem-value> lebel-police
+docker run -e APP_ID=<app-id> -e PRIVATE_KEY=<pem-value> label-police
 ```
 
 ## Contributing
 
-If you have suggestions for how lebel-police could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
+If you have suggestions for how label-police could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
 
 For more, check out the [Contributing Guide](CONTRIBUTING.md).
 

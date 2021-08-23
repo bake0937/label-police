@@ -1,11 +1,11 @@
 {
-  "name": "lebel-police",
+  "name": "label-police",
   "version": "1.0.0",
   "private": true,
   "description": "ラベルを良い感じ貼ってくれるGitHubApps",
   "author": "bake0937 <sadayasu.info@gmail.com>",
   "license": "ISC",
-  "homepage": "https://github.com/bake0937/lebel-police",
+  "homepage": "https://github.com/bake0937/label-police",
   "keywords": [
     "probot",
     "github",
@@ -15,7 +15,7 @@
     "build": "tsc",
     "start": "probot run ./lib/index.js",
     "test": "jest",
-    "dev" : "tsc && yarn start"
+    "dev": "tsc && yarn start"
   },
   "dependencies": {
     "probot": "^11.0.1"

@@ -4666,18 +4666,9 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"latest-version@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "latest-version@npm:5.1.0"
-  dependencies:
-    package-json: ^6.3.0
-  checksum: fbc72b071eb66c40f652441fd783a9cca62f08bf42433651937f078cd9ef94bf728ec7743992777826e4e89305aef24f234b515e6030503a2cbee7fc9bdc2c0f
-  languageName: node
-  linkType: hard
-
-"lebel-police@workspace:.":
+"label-police@workspace:.":
   version: 0.0.0-use.local
-  resolution: "lebel-police@workspace:."
+  resolution: "label-police@workspace:."
   dependencies:
     "@types/jest": ^26.0.19
     "@types/node": ^14.14.19
@@ -4689,6 +4680,15 @@ fsevents@^2.1.2:
     typescript: ^4.1.3
   languageName: unknown
   linkType: soft
+
+"latest-version@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "latest-version@npm:5.1.0"
+  dependencies:
+    package-json: ^6.3.0
+  checksum: fbc72b071eb66c40f652441fd783a9cca62f08bf42433651937f078cd9ef94bf728ec7743992777826e4e89305aef24f234b515e6030503a2cbee7fc9bdc2c0f
+  languageName: node
+  linkType: hard
 
 "leven@npm:2.1.0":
   version: 2.1.0
