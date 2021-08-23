@@ -2,7 +2,7 @@ import { Probot } from 'probot';
 
 export = (app: Probot) => {
   /**
-   * レビューイが pull request を open すると「WIP」ラベルを貼る．
+   * レビュイーが pull request を open すると「WIP」ラベルを貼る．
    */
   app.on('pull_request.opened', async (context) => {
     const labelParams = context.issue({
@@ -12,7 +12,7 @@ export = (app: Probot) => {
   });
 
   /**
-   * レビューイが Conversation で「レビューお願いします」とコメントすると「Needs review」ラベルを貼る．
+   * レビュイーが Conversation で「レビューお願いします」とコメントすると「Needs review」ラベルを貼る．
    */
   app.on('issue_comment.created', async (context) => {
     if (
@@ -37,7 +37,7 @@ export = (app: Probot) => {
   });
 
   /**
-   * レビューイが discussion で「レビューお願いします」とコメントすると「Needs review」ラベルを貼る．
+   * レビュイーが discussion で「レビューお願いします」とコメントすると「Needs review」ラベルを貼る．
    */
   app.on('pull_request_review_comment.created', async (context) => {
     if (
@@ -64,7 +64,7 @@ export = (app: Probot) => {
   });
 
   /**
-   * レビューイが Review で「レビューお願いします」とコメントすると「Needs review」ラベルを貼る．
+   * レビュイーが Review で「レビューお願いします」とコメントすると「Needs review」ラベルを貼る．
    */
   app.on('pull_request_review.submitted', async (context) => {
     if (
@@ -115,7 +115,7 @@ export = (app: Probot) => {
   });
 
   /**
-   * レビューイが pull request を reopen すると「WIP」ラベルを貼る．
+   * レビュイーが pull request を reopen すると「WIP」ラベルを貼る．
    */
   app.on('pull_request.reopened', async (context) => {
     if (
@@ -135,8 +135,8 @@ export = (app: Probot) => {
   });
 
   /**
-   * レビューイが pull request をマージすると全てのラベルを剥がし，「Reviewed」ラベルを貼る，
-   * レビューイが pull request を closed すると「Close pull request」ラベルを貼る．
+   * レビュイーが pull request をマージすると全てのラベルを剥がし，「Reviewed」ラベルを貼る，
+   * レビュイーが pull request を closed すると「Close pull request」ラベルを貼る．
    */
   app.on('pull_request.closed', async (context) => {
     switch (context.payload.pull_request.merged) {
