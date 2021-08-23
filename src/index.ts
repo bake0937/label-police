@@ -113,13 +113,10 @@ export = (app: Probot) => {
    */
   app.on("pull_request.closed", async (context) => {
 
-    let setLabelParams : {issue_number: any;} & {owner: string; repo: string;} & {name: string;}
-    let closeLabelParams : {issue_number: any;} & {owner: string; repo: string;} & {labels: string[];}
-
     switch (context.payload.pull_request.merged){
       case true:
-        setLabelParams = context.issue({
-          name: 'Reviewed',
+       const setLabelParams : any = context.issue({
+          labels: ['Reviewed'],
         });
         await context.octokit.issues.setLabels(setLabelParams);
         break;
@@ -138,7 +135,7 @@ export = (app: Probot) => {
           await context.octokit.issues.removeLabel(removeLabelParams);
         };
 
-        closeLabelParams = context.issue({
+        const closeLabelParams = context.issue({
           labels: ['Close pull request'],
         });
         await context.octokit.issues.addLabels(closeLabelParams);
